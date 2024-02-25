@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner input = new Scanner (System.in);
+		int lightBowl = input.nextInt();
+		int medBowl = input.nextInt();
+		int heavBowl = input.nextInt();
+		
+		int [] bowlList = new int[3];
+		bowlList[0] = lightBowl;
+		bowlList[1] = medBowl;
+		bowlList[2] = heavBowl;
+		
+		Arrays.sort(bowlList);
+		
+		System.out.println(bowlList[1]);
+
+	}
+}
