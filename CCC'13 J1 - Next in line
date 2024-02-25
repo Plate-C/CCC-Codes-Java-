@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner input = new Scanner (System.in);
+		int youngest = input.nextInt();
+		int middle = input.nextInt();
+		int oldest = (middle - youngest) + middle;
+		
+		System.out.println(oldest);
+	}
+}
